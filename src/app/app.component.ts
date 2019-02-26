@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthProvider } from 'ngx-auth-firebaseui';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  providers = AuthProvider
   title = 'reservationApp';
 }
